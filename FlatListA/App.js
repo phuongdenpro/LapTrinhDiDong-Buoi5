@@ -49,43 +49,46 @@ export default function App() {
                 {
                   name: "Ca nấu lẩu, nấu mì mini...",
                   shopName: "Devang",
-                  imgUrl: "'./img/ca_nau_lau.png'",
+                  imgUrl: require('./img/ca_nau_lau.png'),
                 },
                 {
                   name: "1KG KHÔ GÀ BƠ TỎI",
                   shopName: "Devang",
-                  imgUrl: "'./img/ca_nau_lau.png'",
+                  imgUrl: require('./img/ca_nau_lau.png'),
                 },
                 {
                   name: "Xe cần cẩu đa năng",
                   shopName: "Devang",
-                  imgUrl: "'./img/ca_nau_lau.png'",
+                  imgUrl: require('./img/ca_nau_lau.png'),
                 },
                 {
                   name: "Đồ chơi dạng mô hình",
                   shopName: "Devang",
-                  imgUrl: "'./img/ca_nau_lau.png'",
+                  imgUrl: require('./img/ca_nau_lau.png'),
                 },
                 {
                   name: "Lãnh đạo giản đơn",
                   shopName: "Devang",
-                  imgUrl: "'./img/ca_nau_lau.png'",
+                  imgUrl: require('./img/ca_nau_lau.png'),
                 },
                 {
                   name: "Hiểu lòng con trẻ",
                   shopName: "Devang",
-                  imgUrl: "'./img/ca_nau_lau.png'",
+                  imgUrl: require('./img/ca_nau_lau.png'),
                 },
                 {
                   name: "Donal Trump Thiên tài lãnh đạo",
                   shopName: "Devang",
-                  imgUrl: "'./img/ca_nau_lau.png'",
+                  imgUrl: require('./img/ca_nau_lau.png'),
+                },{
+                  name: "Donal Trump Thiên tài lãnh đạo",
+                  shopName: "Devang",
+                  imgUrl: require('./img/ca_nau_lau.png'),
                 },
               ]}
-              renderItem={({ item}) => (
+              renderItem={({ item }) => (
                 <View>
-                const img = item.imgUrl;
-                 <Image source={img}></Image>
+                  <Image source={item.imgUrl}></Image>
                   <Text style={styles.item}>{item.name}</Text>
                 </View>
               )}
